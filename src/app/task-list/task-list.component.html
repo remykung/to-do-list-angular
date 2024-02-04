@@ -1,0 +1,9 @@
+<mat-selection-list #tasks>
+    @for (task of tasklist; track task) {
+      <mat-list-option>{{task}}</mat-list-option> 
+    }
+  </mat-selection-list>
+  
+  <p>
+    Tasks completed: {{tasks.selectedOptions.selected.length}}
+  </p>
