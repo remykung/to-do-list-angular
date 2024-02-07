@@ -1,15 +1,13 @@
 <div class="task-list-container">
   <mat-selection-list #tasks>
     @for (task of tasklist; track task) {
-      <mat-list-option>{{task}}</mat-list-option> 
+      <mat-list-option>{{task}}
+      </mat-list-option> 
     }
   </mat-selection-list>
-
 </div>
 
-<div class="task-list-container">
-  Tasks completed: {{tasks.selectedOptions.selected.length}}
-</div>
+<p>Tasks completed: {{tasks.selectedOptions.selected.length}}</p>
 
 
  

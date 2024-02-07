@@ -1,5 +1,7 @@
 .task-list-container {
     width: 40%;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
 }
