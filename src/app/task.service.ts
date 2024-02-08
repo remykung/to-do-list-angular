@@ -22,4 +22,10 @@ export class TaskService {
     // Publish the updated tasks to the BehaviorSubject
     this.tasksSource.next(currentTasks);
   }
+
+  removeTask(index: number) {
+    const currentTasks = this.tasksSource.getValue();
+    currentTasks.splice(index, 1); // Remove the task by index
+    this.tasksSource.next(currentTasks); // Publish the updated tasks
+  }
 }

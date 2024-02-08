@@ -1,9 +1,11 @@
 <div class="task-list-container">
   <mat-selection-list #tasks>
-    @for (task of tasklist; track task) {
-      <mat-list-option>{{task}}
-      </mat-list-option> 
-    }
+    <mat-list-option *ngFor="let task of tasklist; let i = index">
+      <div class="task-content">
+        {{task}}
+        <mat-icon (click)="deleteTask(i)">remove_circle_outline</mat-icon>
+      </div>
+    </mat-list-option> 
   </mat-selection-list>
 </div>
 
