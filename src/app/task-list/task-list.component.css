@@ -1,7 +1,7 @@
 .task-list-container {
     width: 40%;
     margin: 0 auto;
-    border: 2px solid grey;
+    border: 1px dashed grey;
     border-radius: 5px;
     padding: 10px;
 }
@@ -11,6 +11,11 @@
     justify-content: space-between; /* Aligns children (task and icon) on opposite ends */
     align-items: center; /* Centers children vertically */
     width: 100%; /* Ensures the div takes up the full width of its parent */
-  }
+}
   
-  
+.center {
+    text-align: center;
+    font-size: 20px;
+    left: 0;
+    width: 100%;
+}

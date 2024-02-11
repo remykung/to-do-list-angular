@@ -1,5 +1,9 @@
+
+<p class="center">Items Gathered: {{tasks.selectedOptions.selected.length}} / {{tasklist.length}}</p>
+
 <div class="task-list-container">
   <mat-selection-list #tasks>
+    <div *ngIf="isEmpty">Time to Stock Up!</div>
     <mat-list-option *ngFor="let task of tasklist; let i = index">
       <div class="task-content">
         {{task}}
@@ -9,7 +13,6 @@
   </mat-selection-list>
 </div>
 
-<p>Tasks completed: {{tasks.selectedOptions.selected.length}}</p>
 
 
  

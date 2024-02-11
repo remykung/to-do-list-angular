@@ -1,7 +1,6 @@
 <div class="task-container">
     <mat-form-field appearance="outline">
-        <input matInput [(ngModel)]="task" placeholder="Add your task">
+        <input matInput [(ngModel)]="task" placeholder="Add To Cart" maxlength="18">
     </mat-form-field>
-
     <app-button buttonText="Add" (click)="addTask()"></app-button> <!-- Bind the click event -->
-</div>
+</div>  
